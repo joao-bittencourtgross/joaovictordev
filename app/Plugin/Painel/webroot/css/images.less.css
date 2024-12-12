@@ -1,0 +1,90 @@
+@import "default";
+
+
+
+.box.images{
+    
+    .items{
+    
+        overflow:hidden;
+        
+        .item{
+            width:100px;
+            height:100px;
+            float:left;
+            border:1px solid red;
+            margin:8px;
+            position:relative;            
+            a.fancybox{
+                width:100px;
+                height:100px;                
+                position:relative;
+                display:block;
+                overflow:hidden;
+                &:after{
+                    content:'zoom';
+                    text-indent:-9999px;
+                    width:100px;
+                    height:100px;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    display:none;
+                    background:url('../img/gallery-zoom.png') no-repeat left top;
+                }
+                &:hover{
+                    &:after{
+                        display:block;
+                    }
+                }
+            }
+            a.photoLegenda{
+                width:100px;
+                height:30px;
+                display:block;
+                position:absolute;
+                bottom:0;
+                left:0;
+                background:url('../img/photo-legenda-background.png') no-repeat center center;
+                text-align:center;
+                text-decoration:none;
+                overflow:hidden;
+                opacity:.5;
+                span{
+                    margin-top:15px;
+                    line-height:4;
+                    font-family:'verdana';
+                    font-weight:bold;
+                    font-size:10px;
+                    color:#606060;
+                    padding-left:20px;
+                    background:url('../img/button-edit.png') no-repeat left center;
+                }
+                &:hover,&.active{
+                    opacity:1;
+                }
+            }
+            
+            a.delete{
+                position:absolute;
+                top:-10px;
+                right:-10px;
+                width:20px;
+                height:20px;
+                overflow:hidden;
+                text-indent:-100em;
+                background:url(../img/close.png) no-repeat center center;
+                display:block;
+                opacity:.2;
+                .pb();
+            }
+            
+            &:hover a.delete{
+                opacity:1;
+                .pb(false);
+            }
+        }
+    
+    }
+    
+}

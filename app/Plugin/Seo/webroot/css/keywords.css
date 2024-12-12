@@ -1,0 +1,20 @@
+@import "default";
+
+#keywords li{
+    float:left;
+    width: 325px;
+    position: relative;
+    border: 1px solid #999;
+    margin: 5px;
+    padding:8px;
+    .gradient(#FFF,#DDD);
+    .border-radius;
+    .box-shadow;
+    
+    a{
+        position:absolute;
+        top:5px;
+        right:5px;
+    }
+    
+}

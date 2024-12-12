@@ -1,0 +1,99 @@
+@import "default";
+
+.box.file{
+    a.delete-button{
+        width:20px;
+        height:20px;
+        background:url(../img/close.png) no-repeat center center;
+        overflow:hidden;
+        text-indent:-100em;
+        position: absolute;
+        top:-10px;
+        right:-10px;
+        display: none;
+    }
+    
+    .items .item:hover a.delete-button{
+        display: block;
+    }
+    
+    &.gallery-images .items .item{
+        width:100px;
+        height:100px;
+        float:left;
+        margin:8px;
+        border:1px solid #DDD;
+        position: relative;
+        
+        .bar{
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:0;
+            background:#DDD;
+        }        
+    }
+    
+    &.gallery-files .items .item{
+        position:relative;
+        margin:5px;
+        padding:10px;
+        padding-left:45px;
+        background-color:#EEE;
+        background-repeat:no-repeat;
+        background-position:10px center;
+        border:1px solid #CCC;
+        width:343px;
+        height:66px;
+        float:left;
+        .box-sizing;
+        .border-radius;
+        .title{
+            color:#777;
+            font-style:italic;
+        }
+        input[type=text]{
+            width:100%;
+            .box-sizing;
+            .border-radius;
+            border:1px solid #CCC;
+            padding:5px;
+        }
+        .bar{
+            position:absolute;
+            top:0;
+            left:0;
+            width:0;
+            height:100%;
+            background:#CCC;
+        }
+        
+        background-image:url(../img/extensions/small/empty.png);
+        &.pdf{ background-image:url(../img/extensions/small/pdf.png); }
+        &.rar{ background-image:url(../img/extensions/small/rar.png); }
+        &.ai{ background-image:url(../img/extensions/small/ai.png); }
+        &.bmp{ background-image:url(../img/extensions/small/bmp.png); }
+        &.css{ background-image:url(../img/extensions/small/css.png); }
+        &.doc{ background-image:url(../img/extensions/small/doc.png); }
+        &.docx{ background-image:url(../img/extensions/small/docx.png); }
+        &.gif{ background-image:url(../img/extensions/small/gif.png); }
+        &.html{ background-image:url(../img/extensions/small/html.png); }
+        &.ico{ background-image:url(../img/extensions/small/ico.png); }
+        &.init{ background-image:url(../img/extensions/small/init.png); }
+        &.jpg{ background-image:url(../img/extensions/small/jpg.png); }
+        &.otf{ background-image:url(../img/extensions/small/otf.png); }
+        &.php{ background-image:url(../img/extensions/small/php.png); }
+        &.png{ background-image:url(../img/extensions/small/png.png); }
+        &.rar{ background-image:url(../img/extensions/small/rar.png); }
+        &.ppt{ background-image:url(../img/extensions/small/ppt.png); }
+        &.psd{ background-image:url(../img/extensions/small/psd.png); }
+        &.rtf{ background-image:url(../img/extensions/small/rtf.png); }
+        &.tiff{ background-image:url(../img/extensions/small/tiff.png); }
+        &.torrent{ background-image:url(../img/extensions/small/torrent.png); }
+        &.ttf{ background-image:url(../img/extensions/small/ttf.png); }
+        &.txt{ background-image:url(../img/extensions/small/txt.png); }
+        &.wott{ background-image:url(../img/extensions/small/wott.png); }
+        &.zip{ background-image:url(../img/extensions/small/zip.png); }
+    }
+}

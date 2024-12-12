@@ -1,0 +1,58 @@
+@import "default";
+
+#itemv {
+    width: 200px !important;
+    margin-top: 20px;
+} 
+
+nav.buttons{
+    position:absolute;
+    float: left;
+    top: -5px;
+    a{
+        background: url(../img/bgpannellinks.png) repeat-x;
+        color:#555;
+        font-style:italic;
+        padding:5px;
+        text-decoration:none !important;
+        border-bottom-style: none !important;
+    }
+}
+
+.box.videos .items .item{
+    
+    display: block;
+    border: 1px solid #CCC;
+    .border-radius;
+    height:100px;
+    position:relative;
+    .gradient(#FFF,#DDD);
+    
+    img{
+        height:100px;
+        float:left;
+    }
+    
+    a.remove{
+        width:20px;
+        height:20px;
+        background:url(../img/close.png);
+        position:absolute;
+        top:-10px;
+        right: -10px;
+        overflow:hidden;
+        text-indent: -100em;
+        border-bottom-style: none !important;
+    }
+    
+    input[type=text]{
+        width:470px;
+        float:right;
+        padding:10px;
+        margin-top: 30px;
+        margin-right:10px;
+        .border-radius;
+        border:1px solid #DDD;
+    }
+    
+}

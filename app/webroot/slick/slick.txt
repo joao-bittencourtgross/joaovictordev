@@ -1,0 +1,170 @@
+<script>
+//            $('.multiple-items').slick({
+//                infinite: true,
+//                slidesToShow: 4,
+//                slidesToScroll: 3
+//            });
+            
+            $('.multiple-items').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                prevArrow: '<img src="http://localhost/citshopp20/bxslider/images/arrow_prev.png">',
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                ]
+              });
+        </script>
+
+
+/* ---------------------------------------------- slick ---------------------------------------------- */
+.slick-loading .slick-list {
+    background: #fff url('../slick/ajax-loader.gif') center center no-repeat;
+}
+
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../slick/fonts/slick.eot');
+    src: url('../slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('../slick/fonts/slick.woff') format('woff'), url('../slick/fonts/slick.ttf') format('truetype'), url('../slick/slick.svg#slick') format('svg');
+    src: url('../slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('../slick/fonts/slick.woff') format('woff'), url('../slick/fonts/slick.ttf') format('truetype');
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 22px;
+    height: 38px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 99;
+    /*color: transparent;*/
+    border: none;
+    outline: none;
+    /*background: transparent;*/
+    /*background: url('./imgs/arrow_next.png') no-repeat center center;*/
+}
+
+.slick-prev {
+    background: url('../slick/imgs/arrow_prev.png') no-repeat center center;
+    left: 10px;
+}
+.slick-next {
+    background: url('../slick/imgs/arrow_next.png') no-repeat center center;
+    right: 10px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before {
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+.slick-next:before {
+    content: '→';
+}
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 0px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+@media (max-width: 650px) {
+    .slick-dots li {
+        width: 14px;
+        height: 14px;
+    }
+}
+/* ---------------------------------------------- slick ---------------------------------------------- */

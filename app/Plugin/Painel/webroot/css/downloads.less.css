@@ -1,0 +1,62 @@
+@import "default";
+
+.box.downloads{
+    
+    .item{
+        position:relative;
+        padding:20px;
+        padding-left:90px;
+        border: 1px solid #CCC;
+        .border-radius;
+        background-color:#FFF;
+        background-repeat:no-repeat;
+        background-position:20px center;
+        margin-bottom:20px;
+        background-image:url(../img/extensions/empty.png);
+        
+        &.pdf{ background-image:url(../img/extensions/pdf.png); }
+        &.rar{ background-image:url(../img/extensions/rar.png); }
+        &.ai{ background-image:url(../img/extensions/ai.png); }
+        &.bmp{ background-image:url(../img/extensions/bmp.png); }
+        &.css{ background-image:url(../img/extensions/css.png); }
+        &.doc{ background-image:url(../img/extensions/doc.png); }
+        &.docx{ background-image:url(../img/extensions/docx.png); }
+        &.gif{ background-image:url(../img/extensions/gif.png); }
+        &.html{ background-image:url(../img/extensions/html.png); }
+        &.ico{ background-image:url(../img/extensions/ico.png); }
+        &.init{ background-image:url(../img/extensions/init.png); }
+        &.jpg{ background-image:url(../img/extensions/jpg.png); }
+        &.otf{ background-image:url(../img/extensions/otf.png); }
+        &.php{ background-image:url(../img/extensions/php.png); }
+        &.png{ background-image:url(../img/extensions/png.png); }
+        &.rar{ background-image:url(../img/extensions/rar.png); }
+        &.ppt{ background-image:url(../img/extensions/ppt.png); }
+        &.psd{ background-image:url(../img/extensions/psd.png); }
+        &.rtf{ background-image:url(../img/extensions/rtf.png); }
+        &.tiff{ background-image:url(../img/extensions/tiff.png); }
+        &.torrent{ background-image:url(../img/extensions/torrent.png); }
+        &.ttf{ background-image:url(../img/extensions/ttf.png); }
+        &.txt{ background-image:url(../img/extensions/txt.png); }
+        &.wott{ background-image:url(../img/extensions/wott.png); }
+        &.zip{ background-image:url(../img/extensions/zip.png); }
+        
+        input[type=text]{
+            width:580px;
+            padding:10px;
+            .border-radius;
+            border:1px solid #DDD;
+        }
+        
+        a.delete{
+            width:20px;
+            height:20px;
+            position: absolute;
+            top:-10px;
+            right:-10px;
+            overflow: hidden;
+            text-indent: -100em;
+            background: url(../img/close.png) no-repeat center center;
+        }
+    }
+    
+}

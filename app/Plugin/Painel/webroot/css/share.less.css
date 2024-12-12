@@ -1,0 +1,41 @@
+@import "default";
+
+div.social{
+    
+    iframe{
+        height:25px !important;
+        width: 90px;
+        margin:0;
+        padding:0;
+    }
+    
+    div.social-icon{
+        max-width: 95px !important;
+        height:25px !important;
+        display:inline;
+        overflow:hidden;
+        margin:0;
+        padding:0;
+        float:left;
+    }
+    
+    &.right div.social-icon{
+        float:right;
+    }
+    
+    &.center{
+        text-align:center;
+        div.social-icon{
+            display:inline-block;
+            float:none;
+            position:relative;
+        }
+        .plus,.pinterest{
+            top:-5px;
+        }
+    }
+    
+    div.plus{
+        width:75px;
+    }
+}

@@ -1,0 +1,574 @@
+.wfull {
+  width: 100%;
+  height: auto;
+  display: table;
+}
+.clear {
+  clear: both;
+}
+input:invalid {
+  box-shadow: none;
+}
+textarea:invalid {
+  box-shadow: none;
+}
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a,
+img {
+  border: 0;
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+html,
+body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  font-weight: 400;
+}
+.container-fix {
+  width: auto;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.msg-add-sucess {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #0057D6;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  padding: 3%;
+  font-weight: 700;
+}
+.warning-email {
+  border: 1px solid #ddd;
+  background-color: #FFFEBF;
+  color: #000;
+  font-weight: 400;
+  margin-top: -50px;
+}
+.warning-email b {
+  font-weight: 700;
+}
+.mas {
+  background-color: transparent;
+  color: ;
+}
+.formc {
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+}
+.formc ::placeholder {
+  color: #000;
+  opacity: 1;
+}
+.formc :-ms-input-placeholder {
+  color: #000;
+}
+.formc ::-ms-input-placeholder {
+  color: #000;
+}
+.formc input[type="text"],
+.formc input[type="email"],
+.formc input[type="tel"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  border-radius: 0px;
+}
+.formc select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  color: #767676;
+  text-align: left;
+  border-radius: 2px;
+}
+.formc input[type="submit"] {
+  height: 35px;
+  display: inline-block;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0px;
+  border: 0px;
+  margin-bottom: 0px;
+  background-color: #0057D6;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.msg-send-form {
+  display: none;
+  color: #000;
+}
+.htl {
+  color: #0057D6;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+.row-status {
+  margin-top: 50px;
+}
+.row-status .boxcs {
+  width: 24%;
+  display: inline-table;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 30px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.row-status .boxcs .dcolor {
+  width: 46px;
+  height: 46px;
+  float: left;
+  border: 1px solid #FFF;
+  margin-right: 8px;
+}
+.row-status .boxcs h2 {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  width: 80%;
+}
+.pcq {
+  color: #FFF;
+  font-size: 13px;
+  margin-top: 250px;
+  position: absolute;
+  width: auto;
+  float: left;
+  z-index: 2;
+}
+.mapa-lotes {
+  width: 100%;
+  max-width: 1880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mapa-lotes img {
+  width: 100%;
+  max-width: 1920px;
+}
+.detalhe-lote {
+  width: 100%;
+  padding-top: 0px;
+  max-width: 500px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  text-align: left;
+  display: table;
+  color: ;
+  text-align: center;
+}
+.detalhe-lote .infos-lote {
+  width: 95%;
+  margin: 0 auto;
+}
+.detalhe-lote .close-forml {
+  width: 30px;
+  height: 30px;
+  background-color: #0057D6;
+  float: right;
+  text-align: center;
+  margin-right: 0px;
+  cursor: pointer;
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
+}
+.detalhe-lote .close-forml img {
+  width: 16px;
+  margin-top: 7px;
+}
+.detalhe-lote .close-forml:hover {
+  background-color: ;
+}
+.detalhe-lote .if-logo img {
+  width: 100%;
+  max-width: 106px;
+  margin-top: -5px;
+}
+.detalhe-lote h1 {
+  color: #0057D6;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.detalhe-lote h2 {
+  font-size: 18px;
+  margin-top: 0px;
+}
+.detalhe-lote h3 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.detalhe-lote .texto {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #CCC;
+}
+.detalhe-lote .texto p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 5px;
+}
+.pff {
+  font-size: 18px;
+  color: ;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.pff2 {
+  color: #0057D6;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.row-forml {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.header-lotes {
+  width: 99%;
+  padding: 0.5%;
+  position: fixed;
+  z-index: 10;
+  background: url('../img/mapa/bgbw.png') repeat;
+  top: 0px;
+  left: 0px;
+  border-bottom: 4px solid #FFCE78;
+  border-radius: 0px 0px 0px 22px;
+}
+.header-lotes .left-logo {
+  width: 15%;
+  float: left;
+}
+.header-lotes .left-logo img {
+  width: 90%;
+  max-width: 145px;
+  margin-bottom: -5px;
+}
+.header-lotes .right-options {
+  width: 85%;
+  float: right;
+}
+.boxcs {
+  width: 11.5%;
+  display: inline-table;
+  float: left;
+  margin-right: 1%;
+  text-align: center;
+}
+.boxcs .dcolor {
+  width: 80%;
+  margin: 0 auto;
+  height: 4px;
+  margin-top: 12px;
+}
+.boxcs h2 {
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 8px;
+}
+.show-ft {
+  transition: transform 0.5s ease;
+  transform: translate3d(0,50px,0) !important;
+  top: -50px;
+  visibility: visible;
+}
+footer {
+  width: 100%;
+  height: auto;
+  display: table;
+  background-color: #FFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer .link-left a {
+  margin-left: 20px;
+  margin-top: 17px;
+  display: inline-table;
+  width: auto;
+  background-color: #0057D6;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 12px 18px 12px 18px;
+  border-radius: 4px;
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
+}
+footer .link-left a:hover {
+  background-color: ;
+}
+footer .logo-footer {
+  text-align: center;
+}
+footer .logo-footer img {
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: -5px;
+}
+.box-whatsapp {
+  position: fixed;
+  z-index: 7;
+  bottom: 30px;
+  right: 10px;
+  width: 138px;
+}
+.box-whatsapp a {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  background-color: #00A74D;
+  color: #FFF;
+  border-radius: 4px;
+  float: right;
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
+}
+.box-whatsapp a span {
+  width: auto;
+  float: left;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 3px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+.box-whatsapp a img {
+  width: 26px;
+  float: left;
+  margin-left: 6px;
+}
+.box-whatsapp a:hover {
+  opacity: 0.7;
+}
+@media (max-width: 1120px) {
+  .container-fix {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .status-ft {
+    width: 99%;
+    padding: 0.5%;
+  }
+  .status-ft .boxcs {
+    width: 24%;
+    margin: 0px;
+    margin: 0.5%;
+  }
+  .status-ft .boxcs .dcolor {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 650px) {
+  .formc input[type="text"],
+  .formc input[type="email"],
+  .formc input[type="tel"] {
+    margin-bottom: 15px;
+  }
+  .formc input[type="submit"]:formchover {
+    color: #0057D6;
+    background-color: #FFF;
+  }
+  .msg-add-sucess {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .htl {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+  .htl br {
+    display: none;
+  }
+  .header-lotes {
+    width: 99%;
+    padding: 0.5%;
+    position: relative;
+    display: table;
+  }
+  .header-lotes .left-logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .header-lotes .left-logo img {
+    margin-bottom: 10px;
+  }
+  .header-lotes .right-options {
+    width: 100%;
+    float: left;
+  }
+  .boxcs {
+    width: 24%;
+    display: inline-table;
+    float: left;
+    margin-right: 1%;
+    text-align: center;
+    height: 53px;
+  }
+  .boxcs .dcolor {
+    width: 77%;
+    margin: 0 auto;
+    height: 4px;
+    margin-top: 12px;
+  }
+  .boxcs h2 {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .mapa-lotes {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: table;
+  }
+  .detalhe-lote {
+    width: 88%;
+    padding: 2%;
+    padding-top: 0px;
+  }
+  .detalhe-lote .close-forml {
+    width: 28px;
+    height: 28px;
+    margin-right: -2.2%;
+    cursor: pointer;
+  }
+  .detalhe-lote .close-forml img {
+    width: 16px;
+    margin-top: 7px;
+  }
+  .detalhe-lote .infos-lote {
+    margin-bottom: 10px;
+  }
+  .detalhe-lote h1 {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .detalhe-lote h2 {
+    font-size: 15px;
+  }
+  .detalhe-lote h3 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .detalhe-lote .texto {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  .detalhe-lote .texto p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 0px;
+  }
+  .status-ft {
+    display: none;
+  }
+  footer {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
+  footer .link-left {
+    text-align: center;
+  }
+  footer .link-left a {
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 10px 18px 10px 18px;
+  }
+  footer .logo-footer {
+    text-align: center;
+    margin-top: 25px;
+  }
+  footer .logo-footer img {
+    max-width: 160px;
+  }
+  .box-whatsapp {
+    bottom: 10px;
+    right: none;
+    left: 10px;
+    width: 129px;
+  }
+  .box-whatsapp a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    float: left;
+  }
+  .box-whatsapp a span {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+  .box-whatsapp a img {
+    width: 18px;
+    margin-left: 5px;
+  }
+  .pff {
+    font-size: 15px;
+    width: 90%;
+    margin-top: 5px;
+  }
+  .pff2 {
+    color: ;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .row-forml {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+}

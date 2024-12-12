@@ -1,0 +1,21 @@
+.datecanvas{
+    width:300px;
+    float:left;
+}
+
+.datetime>.minute, .datetime>.hour{
+    width:90px;
+    float:left;
+    text-align: center;
+}
+
+.datetime>.minute>h3, .datetime>.hour>h3{
+    font-size:14px;
+    font-weight:bold;
+    line-height:4;
+}
+
+.ui-slider{
+    background: #DDD !important;
+    margin:0 auto;
+}

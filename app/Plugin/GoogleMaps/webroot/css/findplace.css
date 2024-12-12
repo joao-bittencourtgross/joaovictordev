@@ -1,0 +1,14 @@
+#map_canvas{
+    height: 550px;
+}
+
+#gmap_address{
+    width:615px;
+}
+
+#gmap_okbtn{
+    padding:5px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}

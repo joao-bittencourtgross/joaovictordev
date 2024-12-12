@@ -1,0 +1,16 @@
+Fatal Error
+Error: Call to a member function set() on null	
+File: D:\xampp\htdocs\vitrine\lib\Cake\Controller\Component\AuthComponent.php	
+Line: 847
+Notice: If you want to customize this error message, create app\View\Errors\fatal_error.ctp
+
+comentei a linha e n rolo mais
+
+
+public function flash($message) {
+		if ($message === false) {
+			return;
+		}
+//		$this->Flash->set($message, $this->flash);
+                pre($message);
+	}
