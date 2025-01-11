@@ -3,7 +3,7 @@
     <div class="container">
         <div class="flex-footer">
             <div class="logo-footer">
-                <?php echo $this->Html->link($this->Html->image('logo-footer.png', array('alt'=>'Logo')), array('plugin'=>false, 'controller'=>'pages', 'action'=>'home'), array('escape'=>false)) ?>
+                <?php echo $this->Html->link("<h1>João Victor</h1>", array('plugin'=>false, 'controller'=>'pages', 'action'=>'home'), array('escape'=>false)) ?>
             </div>
             <div class="links-footer">
                 <?php echo $this->Html->link('(46) 99918-2305', array('plugin'=>'clique_whats', 'controller'=>'clique_whats', 'action'=>'index')) ?>

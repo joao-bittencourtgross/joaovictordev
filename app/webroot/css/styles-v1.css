@@ -638,6 +638,19 @@ header .flex-header {
 header .flex-header .menu-mobile {
   display: none;
 }
+header .flex-header .logo a h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #a7a7a7;
+  font-weight: bold;
+  transition: ease-in-out 0.4s;
+}
+header .flex-header .logo a h1:hover {
+  background: linear-gradient(90deg,#13b0f5 3%,#7566d2 48%,#e70faa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 header .flex-header .links {
   margin-left: auto;
 }
@@ -746,6 +759,8 @@ main .projects .box-projects {
 }
 main .projects .box-projects .projects-img img {
   width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 main .projects .box-projects .projects-text {
   padding: 0 20px 20px;
@@ -925,6 +940,19 @@ footer .flex-footer {
   justify-content: space-between;
   align-items: center;
 }
+footer .flex-footer .logo-footer a h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #a7a7a7;
+  font-weight: bold;
+  transition: ease-in-out 0.4s;
+}
+footer .flex-footer .logo-footer a h1:hover {
+  background: linear-gradient(90deg,#13b0f5 3%,#7566d2 48%,#e70faa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 footer .flex-footer .links-footer {
   display: flex;
   justify-content: center;
@@ -985,6 +1013,9 @@ footer .line-footer {
   header {
     position: relative;
   }
+  header .flex-header .logo a h1 {
+    font-size: 25px;
+  }
   header .flex-header .menu-mobile {
     display: block;
     margin-left: auto;
@@ -1023,6 +1054,7 @@ footer .line-footer {
   }
   main .about-section h1 {
     font-size: 25px;
+    margin-top: 30px;
   }
   main .about-section .box-image-about {
     margin-top: 50px;
@@ -1087,6 +1119,9 @@ footer .line-footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
+  }
+  footer .flex-footer .logo-footer a h1 {
+    font-size: 25px;
   }
   footer .flex-footer .links-footer {
     flex-direction: column;

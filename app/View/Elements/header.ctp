@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row flex-header">
             <div class="logo">
-                <?php echo $this->Html->link($this->Html->image('logo.png', array('alt'=>'Logo', 'escape'=>false)), array('plugin'=>false, 'controller'=>'pages', 'action'=>'home'), array('escape'=>false)) ?>
+                <?php echo $this->Html->link("<h1>João Victor</h1>", array('plugin'=>false, 'controller'=>'pages', 'action'=>'home'), array('escape'=>false)) ?>
             </div>
             <div class="menu-mobile"><i class="fas fa-bars"></i></div>
             <div class="links">

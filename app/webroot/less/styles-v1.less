@@ -983,6 +983,28 @@ header {
     .menu-mobile {
       display: none;
     }
+    .logo {
+      a {
+        h1 {
+          margin: 0;
+          font-size: 30px;
+          color: @gray;
+          font-weight: bold;
+          transition: ease-in-out 0.4s;
+          &:hover {
+            background: linear-gradient(
+              90deg,
+              rgba(19, 176, 245, 1) 3%,
+              rgba(117, 102, 210, 1) 48%,
+              rgba(231, 15, 170, 1) 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+        }
+      }
+    }
     .links {
       margin-left: auto;
       nav {
@@ -1115,6 +1137,8 @@ main {
       .projects-img {
         img {
           width: 100%;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
         }
       }
       .projects-text {
@@ -1314,6 +1338,28 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo-footer {
+      a {
+        h1 {
+          margin: 0;
+          font-size: 30px;
+          color: @gray;
+          font-weight: bold;
+          transition: ease-in-out 0.4s;
+          &:hover {
+            background: linear-gradient(
+              90deg,
+              rgba(19, 176, 245, 1) 3%,
+              rgba(117, 102, 210, 1) 48%,
+              rgba(231, 15, 170, 1) 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+        }
+      }
+    }
     .links-footer {
       display: flex;
       justify-content: center;
@@ -1391,6 +1437,13 @@ footer {
   header {
     position: relative;
     .flex-header {
+      .logo {
+        a {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
       .menu-mobile {
         display: block;
         margin-left: auto;
@@ -1439,6 +1492,7 @@ footer {
       padding: 0;
       h1 {
         font-size: 25px;
+        margin-top: 30px;
       }
       .box-image-about {
         margin-top: 50px;
@@ -1519,6 +1573,13 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       gap: 50px;
+      .logo-footer {
+        a {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
       .links-footer {
         flex-direction: column;
         align-items: flex-start;

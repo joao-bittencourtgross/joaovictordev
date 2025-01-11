@@ -51,10 +51,10 @@
                 foreach($projetos as $projeto) {
                     $image = '';
                     if($projeto['Produto']['imagem']){
-                        if(file_exists('img/media_cache/crop/385x230/'.$projeto['Produto']['imagem'].'')){
-                            $image = $this->Html->image('media_cache/crop/385x230/'.$projeto['Produto']['imagem'].'',array('alt'=>$projeto['Produto']['titulo']));
+                        if(file_exists('img/media_cache/crop/375x260/'.$projeto['Produto']['imagem'].'')){
+                            $image = $this->Html->image('media_cache/crop/375x260/'.$projeto['Produto']['imagem'].'',array('alt'=>$projeto['Produto']['titulo']));
                         }else{
-                            $image = $this->Crop->image($projeto['Produto']['imagem'],385,230,array('alt'=>$projeto['Produto']['titulo']));
+                            $image = $this->Crop->image($projeto['Produto']['imagem'],375,260,array('alt'=>$projeto['Produto']['titulo']));
                         }
                     }
 
@@ -62,7 +62,7 @@
 
                     echo '<div data-aos="flip-left" class="four columns box-projects">';
                         echo '<div class="projects-img">';
-                            echo $this->Html->image('/'.$projeto['Produto']['imagem'], array('alt'=>$projeto['Produto']['titulo']));
+                            echo $image;
                         echo '</div>';
                         echo '<div class="projects-text">';
                             echo '<h1>'.$projeto['Produto']['titulo'].'</h1>';
